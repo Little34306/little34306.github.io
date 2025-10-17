@@ -1,1 +1,84 @@
-const _0x4a2b=['test','url','renewable.gold.annual','subscription','GoldYearly','SUBSCRIBED','Apple','live_lookup','auto_spam_block','series_blocking','no_ads','extended_spam_blocking','advanced_caller_id','verified_badge','spam_stats','call_alert','premium_feature','identifai','siri_search','who_viewed_my_profile','who_searched_for_me','contact_request','incognito_mode','premium_badge','premium_app_icon','ghost_call','live_chat_support','call_recording','Excluded','premium_support','family_sharing','gold_caller_id','announce_call','caller_id','spam_blocking','whatsapp_caller_id','Included','subscriptions/status','2099-01-01T01:01:01Z','2024-01-07T02:32:04Z','products/apple','gold','body','stringify'];(function(_0x5d3e4a,_0x4a2b91){const _0x3f7c2d=function(_0x1e8f3c){while(--_0x1e8f3c){_0x5d3e4a['push'](_0x5d3e4a['shift']());}};_0x3f7c2d(++_0x4a2b91);}(_0x4a2b,0x1a3));const _0x3f7c=function(_0x5d3e4a,_0x4a2b91){_0x5d3e4a=_0x5d3e4a-0x0;let _0x3f7c2d=_0x4a2b[_0x5d3e4a];return _0x3f7c2d;};function _0x1e8f(_0x5c8a12){if(_0x5c8a12[_0x3f7c('0x0')]($request[_0x3f7c('0x1')])){return $request[_0x3f7c('0x1')];}}const _0x2d4e1a=[{'id':_0x3f7c('0x7'),'rank':0x1,'status':_0x3f7c('0x24'),'isFree':false},{'id':_0x3f7c('0x8'),'rank':0x2,'status':_0x3f7c('0x24'),'isFree':false},{'id':_0x3f7c('0x9'),'rank':0x3,'status':_0x3f7c('0x24'),'isFree':false},{'id':_0x3f7c('0xa'),'rank':0x4,'status':_0x3f7c('0x24'),'isFree':false},{'id':_0x3f7c('0xb'),'rank':0x5,'status':_0x3f7c('0x24'),'isFree':false},{'id':_0x3f7c('0xc'),'rank':0x6,'status':_0x3f7c('0x24'),'isFree':false},{'id':_0x3f7c('0xd'),'rank':0x7,'status':_0x3f7c('0x24'),'isFree':false},{'id':_0x3f7c('0xe'),'rank':0x8,'status':_0x3f7c('0x24'),'isFree':false},{'id':_0x3f7c('0xf'),'rank':0x9,'status':_0x3f7c('0x24'),'isFree':false},{'id':_0x3f7c('0x10'),'rank':0xc,'status':_0x3f7c('0x24'),'isFree':false},{'id':_0x3f7c('0x11'),'rank':0xf,'status':_0x3f7c('0x24'),'isFree':false},{'id':_0x3f7c('0x12'),'rank':0x10,'status':_0x3f7c('0x24'),'isFree':false},{'id':_0x3f7c('0x13'),'rank':0x11,'status':_0x3f7c('0x24'),'isFree':false},{'id':_0x3f7c('0x14'),'rank':0x12,'status':_0x3f7c('0x24'),'isFree':false},{'id':_0x3f7c('0x15'),'rank':0x13,'status':_0x3f7c('0x24'),'isFree':false},{'id':_0x3f7c('0x16'),'rank':0x14,'status':_0x3f7c('0x24'),'isFree':false},{'id':_0x3f7c('0x17'),'rank':0x15,'status':_0x3f7c('0x24'),'isFree':false},{'id':_0x3f7c('0x18'),'rank':0x16,'status':_0x3f7c('0x24'),'isFree':false},{'id':_0x3f7c('0x19'),'rank':0x17,'status':_0x3f7c('0x24'),'isFree':false},{'id':_0x3f7c('0x1a'),'rank':0x18,'status':_0x3f7c('0x24'),'isFree':false},{'id':_0x3f7c('0x1b'),'rank':0x19,'status':_0x3f7c('0x1c'),'isFree':false},{'id':_0x3f7c('0x1d'),'rank':0x19,'status':_0x3f7c('0x24'),'isFree':false},{'id':_0x3f7c('0x1e'),'rank':0x1a,'status':_0x3f7c('0x1c'),'isFree':false},{'id':_0x3f7c('0x1f'),'rank':0x1b,'status':_0x3f7c('0x24'),'isFree':false},{'id':_0x3f7c('0x20'),'rank':0x1c,'status':_0x3f7c('0x1c'),'isFree':false},{'id':_0x3f7c('0x21'),'rank':0x1d,'status':_0x3f7c('0x24'),'isFree':true},{'id':_0x3f7c('0x22'),'rank':0x1e,'status':_0x3f7c('0x24'),'isFree':true},{'id':_0x3f7c('0x23'),'rank':0x1f,'status':_0x3f7c('0x1c'),'isFree':false}];var _0x5a3c1b;switch($request[_0x3f7c('0x1')]){case _0x1e8f(/subscriptions\/status/):_0x5a3c1b={'expire':_0x3f7c('0x26'),'start':_0x3f7c('0x27'),'paymentProvider':_0x3f7c('0x6'),'isExpired':false,'isGracePeriodExpired':false,'subscriptionStatus':_0x3f7c('0x5'),'inAppPurchaseAllowed':true,'product':{'id':_0x3f7c('0x2'),'sku':_0x3f7c('0x2'),'contentType':_0x3f7c('0x3'),'productType':_0x3f7c('0x4'),'isFreeTrial':false},'tier':{'id':_0x3f7c('0x29'),'feature':_0x2d4e1a}};break;case _0x1e8f(/products\/apple/):_0x5a3c1b={'tier':[{'id':_0x3f7c('0x29'),'product':[{'productType':_0x3f7c('0x4'),'id':_0x3f7c('0x2'),'sku':_0x3f7c('0x2'),'contentType':_0x3f7c('0x3'),'rank':0x6,'paymentProvider':_0x3f7c('0x6'),'clientProductMetadata':{'selectionRank':0x5,'displayOrder':0x5,'isEntitledPremiumScreenProduct':false}}],'feature':_0x2d4e1a,'rank':0x5}]};break;}$done({'body':JSON[_0x3f7c('0x2b')](_0x5a3c1b)});
+function findUrl(_reg) {
+  if (_reg.test($request.url)) {
+    return $request.url;
+  }
+}
+const features = [
+  { "id": "live_lookup", "rank": 1, "status": "Included", "isFree": false },
+    { "id": "auto_spam_block", "rank": 2, "status": "Included", "isFree": false },
+    { "id": "series_blocking", "rank": 3, "status": "Included", "isFree": false },
+    { "id": "no_ads", "rank": 4, "status": "Included", "isFree": false },
+    { "id": "extended_spam_blocking", "rank": 5, "status": "Included", "isFree": false },
+    { "id": "advanced_caller_id", "rank": 6, "status": "Included", "isFree": false },
+    { "id": "verified_badge", "rank": 7, "status": "Included", "isFree": false },
+    { "id": "spam_stats", "rank": 8, "status": "Included", "isFree": false },
+    { "id": "call_alert", "rank": 9, "status": "Included", "isFree": false },
+    { "id": "premium_feature", "rank": 12, "status": "Included", "isFree": false },
+    { "id": "identifai", "rank": 15, "status": "Included", "isFree": false },
+    { "id": "siri_search", "rank": 16, "status": "Included", "isFree": false },
+    { "id": "who_viewed_my_profile", "rank": 17, "status": "Included", "isFree": false },
+    { "id": "who_searched_for_me", "rank": 18, "status": "Included", "isFree": false },
+    { "id": "contact_request", "rank": 19, "status": "Included", "isFree": false },
+    { "id": "incognito_mode", "rank": 20, "status": "Included", "isFree": false },
+    { "id": "premium_badge", "rank": 21, "status": "Included", "isFree": false },
+    { "id": "premium_app_icon", "rank": 22, "status": "Included", "isFree": false },
+    { "id": "ghost_call", "rank": 23, "status": "Included", "isFree": false },
+    { "id": "live_chat_support", "rank": 24, "status": "Included", "isFree": false },
+    { "id": "call_recording", "rank": 25, "status": "Excluded", "isFree": false },
+    { "id": "premium_support", "rank": 25, "status": "Included", "isFree": false },
+    { "id": "family_sharing", "rank": 26, "status": "Excluded", "isFree": false },
+    { "id": "gold_caller_id", "rank": 27, "status": "Included", "isFree": false },
+    { "id": "announce_call", "rank": 28, "status": "Excluded", "isFree": false },
+    { "id": "caller_id", "rank": 29, "status": "Included", "isFree": true },
+    { "id": "spam_blocking", "rank": 30, "status": "Included", "isFree": true },
+    { "id": "whatsapp_caller_id", "rank": 31, "status": "Excluded", "isFree": false }
+];
+var obj;
+switch ($request.url) {
+  case findUrl(/subscriptions\/status/):
+      obj = {
+        expire: "2099-01-01T01:01:01Z",
+        start: "2024-01-07T02:32:04Z",
+        paymentProvider: "Apple",
+        isExpired: false,
+        isGracePeriodExpired: false,
+        subscriptionStatus: "SUBSCRIBED",
+        inAppPurchaseAllowed: true,
+        product: {
+          id: "renewable.gold.annual",
+          sku: "renewable.gold.annual",
+          contentType: "subscription",
+          productType: "GoldYearly",
+          isFreeTrial: false
+        },
+        tier: { id: "gold", feature: features }
+      }
+    break;
+  case findUrl(/products\/apple/):
+      obj = {
+  "tier": [
+    {
+      "id": "gold",
+      "product": [
+        {
+          "productType": "GoldYearly",
+          "id": "renewable.gold.annual",
+          "sku": "renewable.gold.annual",
+          "contentType": "subscription",
+          "rank": 6,
+          "paymentProvider": "Apple",
+          "clientProductMetadata": {
+            "selectionRank": 5,
+            "displayOrder": 5,
+            "isEntitledPremiumScreenProduct": false
+          }
+        }
+      ],
+      "feature": features,
+      "rank": 5
+    }
+  ]
+}
+    break;
+}
+$done({body: JSON.stringify(obj)});
