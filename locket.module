@@ -1,0 +1,9 @@
+#!name=Locket Gold
+#!desc=Locket Gold unlock
+
+[Script]
+revenuecat = type=http-response, pattern=^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/[^/]+$), script-path=https://raw.githubusercontent.com/Little34306/little34306.github.io/refs/heads/main/locket.js, requires-body=true, max-size=-1, timeout=120
+deleteHeader = type=http-request, pattern=^https:\/\/api\.revenuecat\.com\/.+\/(receipts|subscribers), script-path=https://raw.githubusercontent.com/Little34306/little34306.github.io/refs/heads/main/delheader.js, timeout=120
+
+[MITM]
+hostname = %APPEND% api.revenuecat.com
