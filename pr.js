@@ -12,7 +12,7 @@ function fakePlus(json) {
         autoRenewing: true,
         startAt: "2025-11-28T14:37:57.000Z",
         endAt: "2099-12-12T14:37:57.000Z",
-        realEndAt: "9999-12-12T14:37:57.000Z",
+        realEndAt: "2099-12-12T14:37:57.000Z",
         isTrial: true,
         hadTrial: true,
         subscriptionStatus: "ACTIVE"
