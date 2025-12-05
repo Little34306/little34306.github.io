@@ -1,0 +1,8 @@
+#!name=PRISM PRO
+#!desc=PRISM PRO by 34306 & Do Thanh
+
+[Script]
+Prism = type=http-response,pattern=^https:\/\/apis\.naver\.com\/prism\/prism-auth-api\/.*,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Little34306/little34306.github.io/refs/heads/main/pr.js
+
+[MITM]
+hostname = apis.naver.com
