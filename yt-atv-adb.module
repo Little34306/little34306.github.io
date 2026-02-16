@@ -2,47 +2,18 @@
 #!desc=Blocks YouTube ads on Apple TV
 
 [Rule]
-AND,((DOMAIN-SUFFIX,googlevideo.com),(PROTOCOL,UDP)),REJECT
-AND,((DOMAIN,youtubei.googleapis.com),(PROTOCOL,UDP)),REJECT
-DOMAIN,pagead2.googlesyndication.com,REJECT
-DOMAIN,googleads.g.doubleclick.net,REJECT
-DOMAIN,adclick.g.doubleclick.net,REJECT
-DOMAIN,pagead.l.doubleclick.net,REJECT
-DOMAIN,www.googleadservices.com,REJECT
-DOMAIN,www.googletagservices.com,REJECT
-DOMAIN,ads.google.com,REJECT
-DOMAIN,afs.googlesyndication.com,REJECT
-DOMAIN,mobileads.google.com,REJECT
-DOMAIN,innovid.com,REJECT
-DOMAIN-SUFFIX,2mdn.net,REJECT
-DOMAIN-SUFFIX,fwmrm.net,REJECT
-DOMAIN-SUFFIX,doubleclick.net,REJECT
-
-URL-REGEX,^https?:\/\/.+\.googlevideo\.com\/.+(&oad|&ctier=L),REJECT
+AND,((DOMAIN-SUFFIX,googlevideo.com), (PROTOCOL,UDP)),REJECT
+AND,((DOMAIN,youtubei.googleapis.com), (PROTOCOL,UDP)),REJECT
 
 [URL Rewrite]
-^https?:\/\/[\w-]+\.googlevideo\.com\/initplayback.+&oad - reject-200
-^https?:\/\/[\w-]+\.googlevideo\.com\/videoplayback.+&oad - reject-200
-^https?:\/\/[\w-]+\.googlevideo\.com\/videoplayback.+ctier=L - reject-200
+(^https?:\/\/[\w-]+\.googlevideo\.com\/(?!dclk_video_ads).+?)&ctier=L(&.+?),ctier,(.+) $1$2$3 302
+^https?:\/\/[\w-]+\.googlevideo\.com\/(?!(dclk_video_ads|videoplayback\?)).+&oad _ reject-200
+^https?:\/\/(www|s)\.youtube\.com\/api\/stats\/ads _ reject-200
+^https?:\/\/(www|s)\.youtube\.com\/(pagead|ptracking) _ reject-200
+^https?:\/\/s\.youtube\.com\/api\/stats\/qoe\?adcontext _ reject-200
 
-ctier=[A-Z] ctier=A 302
-
-^https?:\/\/s\.youtube\.com\/api\/stats\/ads - reject
-^https?:\/\/www\.youtube\.com\/api\/stats\/ads - reject
-^https?:\/\/www\.youtube\.com\/api\/stats\/qoe\?.*adcontext - reject
-^https?:\/\/www\.youtube\.com\/pagead - reject
-^https?:\/\/www\.youtube\.com\/ptracking - reject
-^https?:\/\/www\.youtube\.com\/api\/stats\/atr - reject
-^https?:\/\/www\.youtube\.com\/get_midroll - reject
-^https?:\/\/www\.youtube\.com\/error_204 - reject
-
-^https?:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/log_event - reject-200
-^https?:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/ad_ - reject-200
-
-[Map Local]
-^https?:\/\/[\w-]+\.googlevideo\.com\/initplayback.+&oad data-type=text data="" status-code=200
-^https?:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/log_event\? data-type=text data="{}" status-code=200
-^https?:\/\/www\.youtube\.com\/get_midroll\?.+ data-type=text data="" status-code=200
+[Script]
+youtube.response = type=http-response,pattern=^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next|player|search|reel\/reel_watch_sequence|guide|account\/get_setting|get_watch),requires-body=1,max-size=-1,binary-body-mode=1,engine={{{脚本执行引擎}}},script-path=https://raw.githubusercontent.com/Maasea/sgmodule/master/Script/Youtube/youtube.response.js,argument="{"lyricLang":"{{{歌词翻译语言}}}","captionLang":"{{{字幕翻译语言}}}","blockUpload":{{{屏蔽上传按钮}}},"blockImmersive":{{{屏蔽选段按钮}}},"debug":{{{启用调试模式}}}}"
 
 [MITM]
-hostname = %APPEND% *.googlevideo.com, youtubei.googleapis.com
+hostname = %APPEND% -redirector*.googlevideo.com,*.googlevideo.com
