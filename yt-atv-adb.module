@@ -45,4 +45,4 @@ ctier=[A-Z] ctier=A 302
 ^https?:\/\/www\.youtube\.com\/get_midroll\?.+ data-type=text data="" status-code=200
 
 [MITM]
-hostname = %APPEND% *.googlevideo.com, youtubei.googleapis.com, s.youtube.com, www.youtube.com
+hostname = %APPEND% *.googlevideo.com, youtubei.googleapis.com
